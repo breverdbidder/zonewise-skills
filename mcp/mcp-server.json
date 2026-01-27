@@ -1,0 +1,43 @@
+{
+  "name": "zonewise-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server for Brevard County Zoning Intelligence",
+  "tools": [
+    {
+      "name": "query_zoning",
+      "description": "Query zoning district by code and jurisdiction",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "zone_code": { "type": "string" },
+          "jurisdiction": { "type": "string" }
+        },
+        "required": ["zone_code", "jurisdiction"]
+      }
+    },
+    {
+      "name": "get_setbacks",
+      "description": "Get setback requirements",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "zone_code": { "type": "string" },
+          "jurisdiction": { "type": "string" }
+        },
+        "required": ["zone_code", "jurisdiction"]
+      }
+    },
+    {
+      "name": "list_zones",
+      "description": "List all zones in jurisdiction",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "jurisdiction": { "type": "string" },
+          "category": { "type": "string" }
+        },
+        "required": ["jurisdiction"]
+      }
+    }
+  ]
+}
