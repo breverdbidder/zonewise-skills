@@ -1,0 +1,27 @@
+{
+  "name": "zonewise",
+  "version": "1.0.0",
+  "displayName": "ZoneWise - Brevard County Zoning",
+  "description": "Query zoning regulations, setbacks, building heights, lot sizes for all 17 Brevard County jurisdictions.",
+  "author": "Everest Capital USA",
+  "repository": "https://github.com/breverdbidder/zonewise-skills",
+  "icon": "🗺️",
+  "tags": ["real-estate", "zoning", "florida", "brevard-county", "setbacks"],
+  "capabilities": {
+    "zoning_lookup": true,
+    "setback_calculator": true,
+    "jurisdiction_overview": true,
+    "zone_comparison": true,
+    "gis_query": true
+  },
+  "data_sources": {
+    "supabase": "https://mocerqjnksmhcjzxrewo.supabase.co",
+    "gis": "https://gis.brevardfl.gov/gissrv/rest/services/Planning_Development/Zoning_WKID2881/MapServer/0"
+  },
+  "statistics": {
+    "jurisdictions": 17,
+    "zoning_districts": 301,
+    "gis_polygons": 10092,
+    "unique_zone_codes": 56
+  }
+}
