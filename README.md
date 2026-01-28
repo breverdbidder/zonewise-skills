@@ -1,53 +1,21 @@
-# 🗺️ ZoneWise Skills - Multi-Platform AI Integration
+# ⚠️ DEPRECATED
 
-> **"Data is the moat. Everything else is a wrapper."**
+This repository has been **archived** and replaced by:
 
-## One Dataset, Multiple Platforms
+## 👉 [zonewise-lobster](https://github.com/breverdbidder/zonewise-lobster)
 
-| Platform | Format | Location |
-|----------|--------|----------|
-| **Manus AI** | .skill | `/manus/` |
-| **Craft Agents** | SKILL.md | `/craft/` |
-| **Claude MCP** | JSON/TS | `/mcp/` |
+The new repository uses **Moltbot Lobster** for deterministic, approval-gated workflows that address security concerns identified in the [Vibe Code Guild analysis](https://github.com/moltbot/moltbot/discussions/security).
 
-## The Data Moat
+### Why the change?
 
-- **301** Zoning Districts
-- **10,092** GIS Polygons  
-- **17** Jurisdictions
-- **56** Unique Zone Codes
+| Old Approach | New Approach |
+|--------------|--------------|
+| Non-deterministic LLM routing | Typed YAML pipelines |
+| Same command → different results | Deterministic execution |
+| Prompt injection risk | Approval gates halt before actions |
 
-## Installation
-
-### Manus AI
-```
-Import from GitHub → https://github.com/breverdbidder/zonewise-skills
-```
-
-### Craft Agents
-```
-Connect → https://github.com/breverdbidder/zonewise-desktop
-```
-
-### Claude Desktop
-Add to `claude_desktop_config.json`:
-```json
-{
-  "mcpServers": {
-    "zonewise": {
-      "command": "npx",
-      "args": ["zonewise-mcp"]
-    }
-  }
-}
-```
-
-## Quick Queries
-```
-"Setbacks for R-1 in Satellite Beach?"
-"Can I build 50ft in Melbourne?"
-"Compare C-1 vs C-2 in Palm Bay"
-```
+**Do not use this repository.** All development has moved to zonewise-lobster.
 
 ---
-*© 2026 Everest Capital USA*
+
+*Archived: January 28, 2026*
